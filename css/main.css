@@ -48,6 +48,35 @@ body {
     background-color: cornsilk;
 }
 
+@media (max-width: 566px) {
+    #container #header nav li:hover a {
+        padding: 5px;
+    }
+    #container #header header {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 566px) {
+    #container #header nav li:hover a {
+        padding: 3px;
+    }
+    #container #header header {
+        display: block;
+        padding-bottom: 10px;
+    }
+    #container #header header .logo {
+        text-align: center;
+    }
+    #container #header header nav ul {
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+    #container #header header nav ul li {
+        margin-right: 0;
+    }
+}
+
 #container #content .doctavka {
     background-color: darkgoldenrod;
     padding: 20px 60px;
@@ -75,6 +104,27 @@ body {
 #container #content .doctavka .text h1 {
     font-size: 160%;
     margin-bottom: 15px;
+}
+
+@media (max-width: 975px) {
+    #container #content .doctavka {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 519px) {
+    #container #content .doctavka .image_sushi img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 354px) {
+    #container #content .doctavka .image_sushi img{
+        width: 220px;
+        height: 220px;
+    }
 }
 
 #container #content .menu {
@@ -110,9 +160,38 @@ body {
     display: inline-block;
 }
 
-#container #content .menu .osnova .element .image_element img {
+#container #content .menu .osnova .element img {
+    display: inline-block;
     width: 400px;
     height: 400px;
+}
+
+@media (max-width: 1209px) {
+    #container #content .menu .osnova {
+        flex-wrap: wrap;
+    }
+    #container #content .menu .osnova .element:nth-child(3) {
+        margin: 0 auto;
+        width: 40%;
+    }
+}
+
+@media (max-width: 840px) {
+    #container #content .menu .osnova {
+        display: block;
+        text-align: center;
+    }
+    #container #content .menu .osnova .element:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 448px) {
+    #container #content .menu .osnova .element .image_element img {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+    }
 }
 
 #container #content .menu .osnova .element .text_elem {
